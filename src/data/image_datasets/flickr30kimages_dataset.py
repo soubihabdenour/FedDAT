@@ -30,7 +30,7 @@ class Flickr30KImagesDataset(Dataset):
         image_size: tuple indicating size of image input to model
         '''
 
-        self.images_dir = os.path.join(flickr_dir, 'flickr30k_images')          # Images across all 2017 splits stored in same directory
+        self.images_dir = os.path.join(flickr_dir, 'flickr30k_images')          # images across all 2017 splits stored in same directory
         self.image_size = image_size
         self.visual_input_type = visual_input_type
         assert visual_input_type in ['pil-image', 'raw', 'fast-rcnn']

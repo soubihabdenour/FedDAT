@@ -34,7 +34,7 @@ toronto_image_config = {
         data_root + "/mscoco/val2014",
     ]
 }
-art_image_config = {"data_dir": [data_root + "/AQUA/SemArt/Images"]}
+art_image_config = {"data_dir": [data_root + "/AQUA/SemArt/images"]}
 
 clove_function_a_config = {
     "task_name": "clove_function_a",

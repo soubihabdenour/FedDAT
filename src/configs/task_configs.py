@@ -40,7 +40,7 @@ pvqa_image_config = {
     ]
 }
 med_image_config = {"data_dir": ["/nfs/data3/yyang/med_images/all_images"]}
-art_image_config = {"data_dir": ["/nfs/data3/yyang/AQUA/SemArt/Images"]}
+art_image_config = {"data_dir": ["/nfs/data3/yyang/AQUA/SemArt/images"]}
 
 flickr_config = {
     "data_dir": "flickr30k/",
@@ -246,7 +246,7 @@ art_albef_config = {
     "train_small": "/nfs/data3/zhangya/albef/art/art_train_small.json",
     "val": "/nfs/data3/zhangya/albef/art/art_val.json",
     "test": "/nfs/data3/zhangya/albef/art/art_test_small.json",
-    "images": "/nfs/data3/yyang/AQUA/SemArt/Images",
+    "images": "/nfs/data3/yyang/AQUA/SemArt/images",
     "answer_list": "/nfs/data3/zhangya/albef/art/answer_list_small.json",
     "splits": ["train", "val"],
     # 'num_labels': 326,

@@ -100,7 +100,7 @@ class VQATrainerCross(TaskTrainer):
             self.visual_input_type = model_config["visual_input_type"]  # pil_image
 
             # Create dataloaders for training and validation
-            # Load COCO Images dataset for image data backbone
+            # Load COCO images dataset for image data backbone
             images_source = self.vqa_config["images_source"]
             if task_key=='gqa' or "clove" in task_key:
                 self.images_dataset = VGImagesDataset(

@@ -70,7 +70,7 @@ class SNLIVETrainer(TaskTrainer):
         self.visual_input_type = model_config['visual_input_type']
         self.batch2inputs_converter = model_config['batch2inputs_converter']
 
-        # Load Flickr30K Images dataset for image data backbone
+        # Load Flickr30K images dataset for image data backbone
         images_source = self.snli_ve_config['images_source']
         flickr30k_config = task_configs[images_source]
         images_dataset = Flickr30KImagesDataset(os.path.join(args.climb_data_dir, flickr30k_config['data_dir']),

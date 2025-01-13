@@ -70,7 +70,7 @@ class VQATrainer(TaskTrainer):
         self.visual_input_type = model_config['visual_input_type']
         self.batch2inputs_converter = model_config['batch2inputs_converter']
 
-        # Load COCO Images dataset for image data backbone
+        # Load COCO images dataset for image data backbone
         images_source = self.vqa_config['images_source']
         mscoco_config = task_configs[images_source]
         self.images_dataset = MSCOCOImagesDataset(coco_dir=os.path.join(args.climb_data_dir, mscoco_config['data_dir']),

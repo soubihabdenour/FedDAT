@@ -29,7 +29,7 @@ class MSCOCOImagesDataset(Dataset):
         image_size: tuple indicating size of image input to model
         '''
 
-        self.images_dir = os.path.join(coco_dir, 'images')          # Images across all 2017 splits stored in same directory
+        self.images_dir = os.path.join(coco_dir, 'images')          # images across all 2017 splits stored in same directory
         self.image_size = image_size
 
         self.visual_input_type = visual_input_type
@@ -98,7 +98,7 @@ class MSCOCOImagesDataset(Dataset):
 
 if __name__ == '__main__':
 
-    dataset = MSCOCOImagesDataset('/data/image_datasets/MCL/ms-coco/', 'raw')
+    dataset = MSCOCOImagesDataset('/home/abdenour/PycharmProjects/FedDAT/src/data/image_datasets/SemArt', 'raw')
     imgid = dataset.imageids[0]
     x = dataset.get_image_data(imgid)
     print(x.shape)

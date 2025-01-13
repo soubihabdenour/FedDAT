@@ -23,7 +23,7 @@ class MSCOCOImagesDataset(Dataset):
 
     def __init__(self, coco_dir, image_size=(384, 384)):
 
-        self.images_dir = os.path.join(coco_dir, 'images')          # Images across all 2017 splits stored in same directory
+        self.images_dir = os.path.join(coco_dir, 'images')          # images across all 2017 splits stored in same directory
         self.image_size = image_size
 
         image_filenames = os.listdir(self.images_dir)
